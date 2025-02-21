@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_global_edicts_gold_depletion"
+		texturefile = "gfx/interface/ideas_EU4/local_gold_depletion_chance_modifier.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_governing_cost"
+		texturefile = "gfx/interface/ideas_EU4/local_governing_cost.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_prosperity"
+		texturefile = "gfx/interface/ideas_EU4/local_prosperity_growth.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_colonial"
+		texturefile = "gfx/interface/ideas_EU4/local_colonial_growth.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_ship_building"
+		texturefile = "gfx/interface/ideas_EU4/ship_recruit_speed.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_attrition"
+		texturefile = "gfx/interface/ideas_EU4/local_hostile_attrition.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}
