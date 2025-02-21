@@ -49,3 +49,5 @@ You can install the mod in two ways: by cloning the repository via Git or by dow
 - After selecting an edict, it will be applied to every single state in your country. You will not be able to use Global Edict Commander until after a year has passed, much like how state edicts work with vanilla.
 
 You are free to use my mod in your own mod, so as long as you credit me. This mod is still a work in progress so report any bugs you find here.
+
+If you want this mod for vanilla EU4, you can find it here: https://github.com/danielm94/global-edict-commander
