@@ -2921,6 +2921,48 @@ guiTypes = {
 					quadTextureSprite = "GFX_global_edicts_made_in_china_button"
 				}
 
+				guiButtonType = {
+					name = "global_edicts_gold_depletion"
+					scripted = yes
+					position = { x = 354 y = 185}
+					
+					quadTextureSprite = "GFX_global_edicts_gold_depletion"
+				}
+				guiButtonType = {
+					name = "global_edicts_prosperity"
+					scripted = yes
+					position = { x = 18 y = 251 }
+					quadTextureSprite = "GFX_global_edicts_prosperity"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_ship_building"
+					scripted = yes
+					position = { x = 84 y = 247}
+					quadTextureSprite = "GFX_global_edicts_ship_building"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_attrition"
+					scripted = yes
+					position = { x = 151 y = 249}
+					quadTextureSprite = "GFX_global_edicts_attrition"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_colonial"
+					scripted = yes
+					position = { x = 219 y = 249}
+					quadTextureSprite = "GFX_global_edicts_colonial"
+				}
+		
+				guiButtonType = {
+					name = "global_edicts_governing_cost"
+					scripted = yes
+					position = { x = 287 y = 251}
+					quadTextureSprite = "GFX_global_edicts_governing_cost"
+				}
+
 			}
 
 			guiButtonType = {
