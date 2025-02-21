@@ -1,5 +1,12 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_global_edicts_window_background"
+		texturefile = "gfx/interface/global_edict_commander_ab_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
 		name = "GFX_global_edicts_gold_depletion"
 		texturefile = "gfx/interface/ideas_EU4/local_gold_depletion_chance_modifier.dds"
 		loadType = "INGAME"
