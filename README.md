@@ -28,8 +28,9 @@ You can install the mod in two ways: by cloning the repository via Git or by dow
 
 3. Once the repository is cloned, **copy or move the `global-edict-commander-ab` folder** and the `descriptor.mod` file to your EU4 mods directory, typically found at: `Documents/Paradox Interactive/Europa Universalis IV/mod`
 4. Rename the descriptor.mod file to the `<mod_folder_name_goes_here>.mod`. E.g., if your mod folder is located in `Documents/Paradox Interactive/Europa Universalis IV/mod/global-edict-commander-ab`, then you will name it `global-edict-commander-ab.mod`.
-5. The mod should now be listed as one of the available mods inside of Paradox launcher. Add it to one of your playsets.
-6. Do not have both this and the vanilla Global Edict Commander enabled at the same time.
+5. Copy the file path of the global edict commander ab mod folder and add it to the `descriptor.mod` file where it says `path=`
+6. The mod should now be listed as one of the available mods inside of Paradox launcher. Add it to one of your playsets.
+7. Do not have both this and the vanilla Global Edict Commander enabled at the same time.
 
 ### 2. Installing Without Git
 
@@ -37,8 +38,9 @@ You can install the mod in two ways: by cloning the repository via Git or by dow
 2. **Extract** the downloaded ZIP file.
 3. **Copy or move the extracted folder** and the `descriptor.mod` to your EU4 mods directory, typically: `Documents/Paradox Interactive/Europa Universalis IV/mod`
 4. Rename the descriptor.mod file to the `<mod_folder_name_goes_here>.mod`. E.g., if your mod folder is located in `Documents/Paradox Interactive/Europa Universalis IV/mod/global-edict-commander-ab`, then you will name it `global-edict-commander.mod-ab`.
-5. The mod should now be listed as one of the available mods inside of Paradox launcher. Add it to one of your playsets.
-6. Do not have both this and the vanilla Global Edict Commander enabled at the same time.
+5. Copy the file path of the global edict commander ab mod folder and add it to the `descriptor.mod` file where it says `path=`
+6. The mod should now be listed as one of the available mods inside of Paradox launcher. Add it to one of your playsets.
+7. Do not have both this and the vanilla Global Edict Commander enabled at the same time.
 
 ## Usage
 
