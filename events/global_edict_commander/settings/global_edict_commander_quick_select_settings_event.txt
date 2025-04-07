@@ -10,7 +10,7 @@ country_event = {
 		name = global_edict_commander_quick_select_settings_event.go_back
 		hidden_effect = {
 			country_event = {
-				id = global_edict_commander_settings_events.1				# Assumes this is the previous settings menu
+				id = global_edict_commander_settings_events.1
 			}
 		}
 	}
@@ -105,6 +105,7 @@ country_event = {
 			hidden_trigger = {
 				has_encourage_development_quick_select = no
 				OR = {
+					# Only show if Rapid Industrialization isn't active/available
 					NOT = {
 						has_country_flag = enable_industrialisation_flag
 					}
@@ -126,6 +127,15 @@ country_event = {
 		trigger = {
 			hidden_trigger = {
 				has_encourage_development_quick_select = yes
+				OR = {
+					# Only show if Rapid Industrialization isn't active/available
+					NOT = {
+						has_country_flag = enable_industrialisation_flag
+					}
+					NOT = {
+						is_emperor_of_china = yes
+					}
+				}
 			}
 		}
 		hidden_effect = {
@@ -168,9 +178,10 @@ country_event = {
 		trigger = {
 			hidden_trigger = {
 				has_protect_trade_quick_select = no
-			}
-			NOT = {
-				has_country_flag = fra_improve_trade_power_state_edict_flag
+				NOT = {
+					has_country_flag = fra_improve_trade_power_state_edict_flag
+				}
+				# Only show if Promote Trade isn't active
 			}
 		}
 		hidden_effect = {
@@ -185,9 +196,10 @@ country_event = {
 		trigger = {
 			hidden_trigger = {
 				has_protect_trade_quick_select = yes
-			}
-			NOT = {
-				has_country_flag = fra_improve_trade_power_state_edict_flag
+				NOT = {
+					has_country_flag = fra_improve_trade_power_state_edict_flag
+				}
+				# Only show if Promote Trade isn't active
 			}
 		}
 		hidden_effect = {
@@ -535,6 +547,211 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = global_edict_commander_quick_select_settings_event.18
+			}
+		}
+	}
+	# --- New Edicts (AB Namespace) ---
+	# Encourage Economic Growth
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.economic_growth	
+		trigger = {
+			hidden_trigger = {
+				has_encourage_economic_growth_quick_select = no
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.1
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.economic_growth	
+		highlight = yes
+		trigger = {
+			hidden_trigger = {
+				has_encourage_economic_growth_quick_select = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.1
+			}
+		}
+	}
+	# Disrupt Local Infrastructure
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.disrupt_infrastructure	
+		trigger = {
+			hidden_trigger = {
+				has_disrupt_local_infrastructure_quick_select = no
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.2
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.disrupt_infrastructure	
+		highlight = yes
+		trigger = {
+			hidden_trigger = {
+				has_disrupt_local_infrastructure_quick_select = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.2
+			}
+		}
+	}
+	# Strengthen Local Shipbuilding Tradition
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.shipbuilding	
+		trigger = {
+			hidden_trigger = {
+				has_strengthen_local_shipbuilding_tradition_quick_select = no
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.3
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.shipbuilding	
+		highlight = yes
+		trigger = {
+			hidden_trigger = {
+				has_strengthen_local_shipbuilding_tradition_quick_select = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.3
+			}
+		}
+	}
+	# Improved Gold Mining
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.gold_mining	
+		trigger = {
+			hidden_trigger = {
+				has_improved_gold_mining_quick_select = no
+				any_owned_province = {
+					trade_goods = gold
+				}
+				# Trigger from UI file
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.4
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.gold_mining	
+		highlight = yes
+		trigger = {
+			hidden_trigger = {
+				has_improved_gold_mining_quick_select = yes
+				any_owned_province = {
+					trade_goods = gold
+				}
+				# Trigger from UI file
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.4
+			}
+		}
+	}
+	# Colonial Development
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.colonial_dev	
+		trigger = {
+			hidden_trigger = {
+				has_colonial_development_quick_select = no
+				OR = {
+					# Trigger from UI file
+					has_idea_group = exploration_ideas
+					has_idea_group = expansion_ideas
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.5
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.colonial_dev	
+		highlight = yes
+		trigger = {
+			hidden_trigger = {
+				has_colonial_development_quick_select = yes
+				OR = {
+					# Trigger from UI file
+					has_idea_group = exploration_ideas
+					has_idea_group = expansion_ideas
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.5
+			}
+		}
+	}
+	# Modernized Local Administration
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.modern_admin	
+		trigger = {
+			hidden_trigger = {
+				has_modernized_local_administration_quick_select = no
+				# Complex trigger from UI file - simplified for event availability check
+				OR = {
+					full_idea_group = state_governance_ideas
+					mission_completed = per_government_modern
+					mission_completed = perm_government_modern
+					mission_completed = perc_government_modern
+					mission_completed = mper_government_modern
+					mission_completed = grg_government_modern
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.6
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_quick_select_settings_event.1.modern_admin	
+		highlight = yes
+		trigger = {
+			hidden_trigger = {
+				has_modernized_local_administration_quick_select = yes
+				# Complex trigger from UI file - simplified for event availability check
+				OR = {
+					full_idea_group = state_governance_ideas
+					mission_completed = per_government_modern
+					mission_completed = perm_government_modern
+					mission_completed = perc_government_modern
+					mission_completed = mper_government_modern
+					mission_completed = grg_government_modern
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = global_edict_commander_quick_select_ab_settings_event.6
 			}
 		}
 	}
