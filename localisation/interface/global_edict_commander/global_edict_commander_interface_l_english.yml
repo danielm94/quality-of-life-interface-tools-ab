@@ -18,7 +18,7 @@
  global_edicts_local_separatism_button_tt: "§YState Integration Edict§!\nYears of Separatism: §G-10§![quick_select_local_separatism_tooltip_loc]"
  global_edicts_goods_produced_button_tt: "§YUrbanization Edict§!\nLocal Goods Produced Modifier: §G+33.0%§![quick_select_goods_produced_tooltip_loc]"
  global_edicts_movement_button_tt: "§YFrench Infrastructure Network§!\nFriendly Movement Speed: §G+20.0%§![quick_select_movement_tooltip_loc]"
- global_edicts_french_trade_button_tt: "§BProm§!§Wote T§!§Rrade§!\nLocal Trade Power §G+75.0%§![quick_select_french_trade_tooltip_loc]"
+ global_edicts_french_trade_button_tt: "§YPromote Trade§!\nLocal Trade Power §G+75.0%§![quick_select_french_trade_tooltip_loc]"
  global_edicts_made_in_china_button_tt: "§YRapid Industrialization§!\nLocal Goods Produced Modifier: §G+20.0%§ \n§WLocal Development Cost Modifier: § §G-10.0%§![quick_select_made_in_china_tooltip_loc]"
  global_edicts_unrest_button_trigger_tt: "Has unlocked the §YFeudal De Jure Law§! edict through the §YAges§! interface."
  global_edicts_resist_reformation_button_trigger_tt: "Has unlocked the §YReligion Enforced§! edict through the §YAges§! interface."

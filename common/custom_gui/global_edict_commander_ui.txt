@@ -943,6 +943,24 @@ custom_button = {
 			current_age = age_of_revolutions
 		}
 	}
+	frame = {
+		number = 1
+		trigger = {
+			FROM = {
+				tag = FRC
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			FROM = {
+				NOT = {
+					tag = FRC
+				}
+			}
+		}
+	}
 	trigger = {
 		hidden_trigger = {
 			FROM = {
@@ -991,10 +1009,28 @@ custom_button = {
 		}
 	}
 	trigger = {
-		FROM = {
-			hidden_trigger = {
+		hidden_trigger = {
+			FROM = {
 				NOT = {
 					has_country_flag = edict_event_enabled
+				}
+			}
+		}
+	}
+	frame = {
+		number = 1
+		trigger = {
+			FROM = {
+				tag = FRC
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			FROM = {
+				NOT = {
+					tag = FRC
 				}
 			}
 		}
@@ -1241,6 +1277,24 @@ custom_button = {
 			has_country_flag = fra_enable_infrastructure_network_flag
 		}
 		current_age = age_of_revolutions
+	}
+	frame = {
+		number = 1
+		trigger = {
+			FROM = {
+				tag = FRC
+			}
+		}
+	}
+	frame = {
+		number = 2
+		trigger = {
+			FROM = {
+				NOT = {
+					tag = FRC
+				}
+			}
+		}
 	}
 	trigger = {
 		hidden_trigger = {
@@ -1623,6 +1677,25 @@ custom_icon = {
 			AND = {
 				has_promote_trade_quick_select = yes
 				has_country_flag = fra_improve_trade_power_state_edict_flag
+				NOT = {
+					tag = FRC
+				}
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = edict_commander_row_2_slot_2_glow_francia
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_flag = edict_event_enabled
+			}
+			AND = {
+				has_promote_trade_quick_select = yes
+				has_country_flag = fra_improve_trade_power_state_edict_flag
+				tag = FRC
 			}
 		}
 	}
@@ -1706,6 +1779,24 @@ custom_icon = {
 			current_age = age_of_revolutions
 			has_country_flag = fra_enable_infrastructure_network_flag
 			has_french_infrastructure_network_quick_select = yes
+			NOT = {
+				tag = FRC
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = edict_commander_row_3_slot_1_glow_francia
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_flag = edict_event_enabled
+			}
+			current_age = age_of_revolutions
+			has_country_flag = fra_enable_infrastructure_network_flag
+			has_french_infrastructure_network_quick_select = yes
+			tag = FRC
 		}
 	}
 }
@@ -1739,6 +1830,26 @@ custom_icon = {
 			}
 			has_country_flag = fra_enable_infrastructure_network_flag
 			has_french_infrastructure_network_quick_select = yes
+			NOT = {
+				tag = FRC
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = edict_commander_row_3_slot_2_glow_francia
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_flag = edict_event_enabled
+			}
+			NOT = {
+				current_age = age_of_revolutions
+			}
+			has_country_flag = fra_enable_infrastructure_network_flag
+			has_french_infrastructure_network_quick_select = yes
+			tag = FRC
 		}
 	}
 }
