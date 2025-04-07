@@ -1,12 +1,18 @@
 urbanization_state_edict = {
 	potential = {
-		current_age = age_of_revolutions
+		OR = {
+			current_age = age_of_revolutions
+			current_age = age_of_imperialism
+		}
 		has_government_attribute = unlock_special_state_edicts
 	}
 	
 	allow = {
 		has_government_attribute = unlock_special_state_edicts
-		current_age = age_of_revolutions
+		OR = {
+			current_age = age_of_revolutions
+			current_age = age_of_imperialism
+		}
 	}
 	
 	modifier = {

@@ -1,4 +1,4 @@
-edict_defensive_edict = {
+edict_attrition_edict = {
 	potential = {
 		always = yes		#we support "potential" if modders want to have lots and just show some.
 	}
@@ -8,38 +8,15 @@ edict_defensive_edict = {
 	}
 	
 	modifier = {
-		local_defensiveness = 0.33
+		local_hostile_attrition = 1
+		max_attrition = 1
 	}
 	
-	color = {  46 114 55  }
+	color = {  159 179 174  }
 	
 	
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 0
-			any_province_in_state = {
-				NOT = { fort_level = 1 }
-			}
-		}
-		modifier = {
-			factor = 3
-			any_province_in_state = {
-				fort_level = 1
-				owner = {
-					is_at_war = yes
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			any_province_in_state = {
-				is_capital = yes
-				owner = {
-					is_at_war = yes
-				}
-			}
-		}
 		modifier = {
 			factor = 10
 			any_province_in_state = {
