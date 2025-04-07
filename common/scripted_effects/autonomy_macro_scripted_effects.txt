@@ -266,9 +266,42 @@ reduce_autonomy_globally = {
 				}
 			}
 			add_local_autonomy = -25
-			add_province_modifier = {
-				name = autonomy_decreased
-				duration = 10950
+			export_to_variable = {
+				which = autonomy_cooldown_modifier
+				value = modifier:autonomy_change_time
+				who = FROM
+			}
+			change_variable = {
+				which = autonomy_cooldown_modifier
+				value = 1
+			}
+			set_variable = {
+				which = autonomy_decreased_duration
+				value = 10950
+			}
+			multiply_variable = {
+				which = autonomy_decreased_duration
+				which = autonomy_cooldown_modifier
+			}
+			#Check if negative number, we can't have a negative duration. 
+			#Well we can, but you wouldn't use this if you wanted that.
+			if = {
+				limit = {
+					NOT = {
+						check_variable = {
+							which = autonomy_decreased_duration
+							value = 0
+						}
+					}
+				}
+				multiply_variable = {
+					which = autonomy_decreased_duration
+					value = -1
+				}
+			}
+			variable_province_modifier = {
+				var = autonomy_decreased_duration
+				modifier = autonomy_decreased
 			}
 			FROM = {
 				change_variable = {
