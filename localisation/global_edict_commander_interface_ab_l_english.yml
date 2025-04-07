@@ -1,7 +1,0 @@
-﻿l_english:
- global_edicts_gold_depletion_tt: "Improved Gold Mining\nLocal Gold Depletion Chance Modifier: §G-25%§"
- global_edicts_governing_cost_tt: "Modernized Local Administration\nProvince Governing Cost: §G-10%§"
- global_edicts_prosperity_tt: "Encourage Economic Growth\nLocal Prosperity Growth: §G+0.25§"
- global_edicts_colonial_tt: "Colonial Development\nLocal Settler Increase: §G+10.00§"
- global_edicts_ship_building_tt: "Strengthen Local Shipbuilding Tradition\nLocal Shipbuilding Time: §G-25%§"
- global_edicts_attrition_tt: "Disrupt Local Infrastructure\nMaximum Attrition: §R+1.00§ \n§WAttrition for Enemies: § §G1.00§"
