@@ -3480,6 +3480,46 @@ guiTypes = {
 					scripted = yes
 					position = { x = 178 y = 213 }
 				}
+
+				iconType = {
+					name ="edict_commander_row_4_slot_1_glow"
+					spriteType = "GFX_global_edicts_frame_glow"
+					scripted = yes
+					position = { x = 40 y =  291 }
+				}
+				iconType = {
+					name ="edict_commander_row_4_slot_2_glow"
+					spriteType = "GFX_global_edicts_frame_glow"
+					scripted = yes
+					position = { x = 109 y = 291 }
+				}
+
+				iconType = {
+					name ="edict_commander_row_4_slot_3_glow"
+					spriteType = "GFX_global_edicts_frame_glow"
+					scripted = yes
+					position = { x = 178 y = 291 }
+				}
+
+				iconType = {
+					name ="edict_commander_row_4_slot_4_glow"
+					spriteType = "GFX_global_edicts_frame_glow"
+					scripted = yes
+					position = { x = 247 y = 291 }
+				}
+
+				iconType = {
+					name ="edict_commander_row_5_slot_1_glow"
+					spriteType = "GFX_global_edicts_frame_glow"
+					scripted = yes
+					position = { x = 40 y = 360 }
+				}
+				iconType = {
+					name ="edict_commander_row_5_slot_2_glow"
+					spriteType = "GFX_global_edicts_frame_glow"
+					scripted = yes
+					position = { x = 109 y = 360 }
+				}
 			}
 
 			guiButtonType = {
