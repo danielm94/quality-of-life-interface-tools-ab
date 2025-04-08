@@ -75,7 +75,7 @@ province_is_in_canton_trade_node = {
 }
 
 province_is_in_philippines_trade_node = {
-	same_trade_node_as = 1397
+	same_trade_node_as = 4358
 }
 
 province_is_in_nippon_trade_node = {
