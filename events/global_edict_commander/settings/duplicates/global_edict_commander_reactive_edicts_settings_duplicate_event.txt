@@ -48,6 +48,17 @@ country_event = {
 		name = global_edict_commander_reactive_edicts_settings_event.1.defensive_edict_setter
 		custom_tooltip = defensive_setter_tt
 		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = reactive_edict_attrition_setter
+					NOT = {
+						has_country_flag = reactive_edict_defensive_setter
+					}
+				}
+				toggle_country_flag = {
+					flag = reactive_edict_attrition_setter
+				}
+			}
 			toggle_country_flag = {
 				flag = reactive_edict_defensive_setter
 			}
@@ -68,6 +79,53 @@ country_event = {
 		hidden_effect = {
 			toggle_country_flag = {
 				flag = reactive_edict_development_setter
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_reactive_edicts_settings_event.1.attrition_setter
+		custom_tooltip = attrition_setter_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = reactive_edict_defensive_setter
+					NOT = {
+						has_country_flag = reactive_edict_attrition_setter
+					}
+				}
+				toggle_country_flag = {
+					flag = reactive_edict_defensive_setter
+				}
+			}
+			toggle_country_flag = {
+				flag = reactive_edict_attrition_setter
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_reactive_edicts_settings_event.1.attrition_cleanup
+		custom_tooltip = attrition_cleanup_tt
+		hidden_effect = {
+			toggle_country_flag = {
+				flag = reactive_edict_attrition_cleanup
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_reactive_edicts_settings_event.1.colonial_setter
+		custom_tooltip = colonial_setter_tt
+		hidden_effect = {
+			toggle_country_flag = {
+				flag = reactive_edict_colonial_setter
+			}
+		}
+	}
+	option = {
+		name = global_edict_commander_reactive_edicts_settings_event.1.colonial_cleanup
+		custom_tooltip = colonial_cleanup_tt
+		hidden_effect = {
+			toggle_country_flag = {
+				flag = reactive_edict_colonial_cleanup
 			}
 		}
 	}
