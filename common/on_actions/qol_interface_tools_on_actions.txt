@@ -95,21 +95,20 @@ on_siege_lost_province = {
 				}
 			}
 		}
-		else = {
-			if = {
-				limit = {
-					owner = {
-						has_reactive_defensive_edict_cleanup_enabled = yes
-					}
-					NOT = {
-						any_province_in_state = {
-							has_fort_building_trigger = yes
-							controlled_by = owner
-						}
+		else_if = {
+			limit = {
+				has_state_edict = edict_defensive_edict
+				owner = {
+					has_reactive_defensive_edict_cleanup_enabled = yes
+				}
+				NOT = {
+					any_province_in_state = {
+						has_fort_building_trigger = yes
+						controlled_by = owner
 					}
 				}
-				set_state_edict = no_edict
 			}
+			set_state_edict = no_edict
 		}
 	}
 }
