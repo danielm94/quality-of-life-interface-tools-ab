@@ -42,7 +42,12 @@ calculate_all_province_autonomy = {
 			}
 			if = {
 				limit = {
-					is_state_core = owner
+					OR = {
+						is_state_core = owner
+						NOT = {
+							is_core = FROM
+						}
+					}
 				}
 				set_variable = {
 					which = autonomy_floor
