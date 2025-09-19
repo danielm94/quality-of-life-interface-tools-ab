@@ -424,12 +424,12 @@ guiTypes = {
 				quadTextureSprite = "GFX_move_trade_port"
 				position = { x = 37 y = 0 }
 			}
-
 			guiButtonType =
 			{
 				name = "add_parliament"
 				quadTextureSprite = "GFX_add_parliament_icon"
 				position = { x = 73 y = 1 }
+				shortcut = "shift+p"
 			}
 
 			guiButtonType =
@@ -570,7 +570,13 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 
 			### Core
-
+			guiButtonType = {
+				name = "parliament_macro_button"
+				quadTextureSprite = "GFX_autonomy_macro_empty_button"
+				position = { x = 117 y = -65 }
+				shortcut = "CTRL+shift+p"
+				scripted = yes
+			}
 			guiButtonType = {
 				name = "fort_macro_button"
 				position = { x=478 y=472}
@@ -1125,14 +1131,60 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="raze_button"
+				scripted = yes
 				position = { x= 450 y = 60 }
-				quadTextureSprite ="GFX_development_button_raze"
+				quadTextureSprite ="GFX_raze_button_new"
 				tooltip = ""
 				tooltipText =""
 				delayedTooltipText = ""
 				buttonText = ""
 				buttonFont = "vic_18"
 				Orientation = "UPPER_LEFT"
+				shortcut =  "shift+r"
+			}
+			guiButtonType =
+			{
+				name ="scripted_raze_button"
+				scripted = yes
+				position = { x= 450 y = 60 }
+				quadTextureSprite ="GFX_raze_button_new"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				clicksound = burncolony
+				shortcut = "shift+r"
+			}
+			guiButtonType = {
+				name ="raze_all_button"
+				scripted = yes
+				position = { x= 450 y = 60 }
+				quadTextureSprite = "GFX_autonomy_macro_empty_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				no_clicksound = yes
+				shortcut = "ALT+shift+r"
+			}
+			guiButtonType =
+			{
+				name ="whitelist_raze_province_button"
+				scripted = yes
+				position = { x= 450 y = 60 }
+				quadTextureSprite = "GFX_autonomy_macro_empty_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = ""
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				no_clicksound = yes
+				shortcut = "shift+w"
 			}
 
 
