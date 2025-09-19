@@ -41,7 +41,6 @@ execute_razed_province_on_actions = {
 		set_country_flag = ab_achiev_razed_parma
 	}
 	ab_on_raze_effect = yes
-	wallachian_terror_on_raze_effect = yes
 }
 
 #Basically remove_loot effect gives a province's loot to anyone except the owner... So we have to do the following:
