@@ -204,13 +204,13 @@ calculate_building_upgrade_costs = {
 		calculate_fortress_upgrade_cost = yes
 		calculate_naval_battery_upgrade_cost = yes
 		#AB
-		calculate_greatmarket_build_cost = yes
-		calculate_factory_build_cost = yes
-		calculate_fort_19th_build_cost = yes
-		calculate_gravel_road_build_cost = yes
-		calculate_royal_road_build_cost = yes
-		calculate_macadam_road_build_cost = yes
-		calculate_rail_road_build_cost = yes
+		calculate_greatmarket_upgrade_cost = yes
+		calculate_factory_upgrade_cost = yes
+		calculate_fort_19th_upgrade_cost = yes
+		calculate_gravel_road_upgrade_cost = yes
+		calculate_royal_road_upgrade_cost = yes
+		calculate_macadam_road_upgrade_cost = yes
+		calculate_rail_road_upgrade_cost = yes
 	}
 }
 

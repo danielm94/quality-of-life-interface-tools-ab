@@ -498,3 +498,82 @@ custom_button = {
 		}
 	}
 }
+
+custom_text_box = {
+	name = upgrade_to_trade_depot_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_stock_exchange_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_town_hall_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_drydock_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_grand_shipyard_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_counting_house_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_training_fields_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_conscription_center_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_cathedral_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_fort_16th_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_fort_17th_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_fort_18th_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
+custom_text_box = {
+	name = upgrade_to_naval_battery_cost
+	potential = {
+	}
+	tooltip = empty_text
+}
