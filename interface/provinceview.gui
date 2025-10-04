@@ -5650,6 +5650,7 @@ guiTypes = {
 						buttonText = "Settings"
 						buttonFont = "vic_18"
 						scripted = yes
+						shortcut = "ctrl+,"
 					}
 					guiButtonType = {
 						name = "building_macro_cancel_button"
@@ -5660,6 +5661,7 @@ guiTypes = {
 						delayedTooltipText = ""
 						buttonText = "Cancel"
 						buttonFont = "vic_18"
+						shortcut = "CTRL+z"
 						scripted = yes
 					}
 				}
@@ -6348,6 +6350,7 @@ guiTypes = {
 						buttonText = "Cancel"
 						buttonFont = "vic_18"
 						scripted = yes
+						shortcut = "CTRL+z"
 					}
 				}
 			}
