@@ -6389,7 +6389,7 @@ guiTypes = {
 					textureFile = ""
 					font = "vic_29s"
 					borderSize = {x = 4 y = 4}
-					text = delete_building_macro_title # You will need to create this localization key
+					text = delete_building_macro_title
 					maxWidth = 390
 					maxHeight = 32
 					format = centre
@@ -6408,7 +6408,7 @@ guiTypes = {
 					iconType = {
 						name = "trade_banner"
 						position = { x = 4 y = 0 }
-						spriteType = "GFX_banner_left_3"
+						spriteType = "GFX_banner_left_4"
 					}
 
 					instantTextBoxType={
@@ -6449,15 +6449,22 @@ guiTypes = {
 						quadTextureSprite = "GFX_stock_exchange"
 					}
 
+					guiButtonType = {
+						name = "building_macro_delete_greatmarket"
+						position = { x = 165 y = 32 }
+						scripted = yes
+						quadTextureSprite = "GFX_greatmarket"
+					}
+
 					iconType = {
 						name = "government_banner"
-						position = { x = 188 y = 0 }
+						position = { x = 249 y = 0 }
 						spriteType = "GFX_banner_right_3"
 					}
 
 					instantTextBoxType={
 						name = "title_government"
-						position = {x = 240 y = 9 }
+						position = {x = 301 y = 9 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 120
@@ -6468,27 +6475,27 @@ guiTypes = {
 					iconType ={
 						name ="government_icon"
 						spriteType = "GFX_macro_buildings_category_strip"
-						position = { x = 213 y = 3}
+						position = { x = 274 y = 3}
 						frame = 2
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_town_hall"
-						position = { x = 268 y = 32 }
+						position = { x = 329 y = 32 }
 						scripted = yes
 						quadTextureSprite = "GFX_town_hall"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_courthouse"
-						position = { x = 216 y = 32 }
+						position = { x = 277 y = 32 }
 						scripted = yes
 						quadTextureSprite = "GFX_courthouse"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_university"
-						position = { x = 320 y = 32 }
+						position = { x = 381 y = 32 }
 						scripted = yes
 						quadTextureSprite = "GFX_university"
 					}
@@ -6546,13 +6553,13 @@ guiTypes = {
 
 					iconType = {
 						name = "production_banner"
-						position = { x = 240 y = 97 }
-						spriteType = "GFX_banner_right_2"
+						position = { x = 249 y = 97 }
+						spriteType = GFX_banner_right_3
 					}
 
 					instantTextBoxType={
 						name = "title_production"
-						position = {x = 288 y = 106 }
+						position = {x = 301 y = 106 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 80
@@ -6563,22 +6570,29 @@ guiTypes = {
 					iconType ={
 						name ="production_icon"
 						spriteType = "GFX_macro_buildings_category_strip"
-						position = { x = 262 y = 100}
+						position = { x = 274 y = 100}
 						frame = 4
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_workshop"
-						position = { x = 268 y = 129 }
+						position = { x = 277 y = 129 }
 						scripted = yes
 						quadTextureSprite = "GFX_workshop"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_counting_house"
-						position = { x = 320 y = 129 }
+						position = { x = 329 y = 129 }
 						scripted = yes
 						quadTextureSprite = "GFX_counting_house"
+					}
+
+					guiButtonType = {
+						name = "building_macro_delete_factory"
+						position = { x = 381 y = 129 }
+						scripted = yes
+						quadTextureSprite = "GFX_factory"
 					}
 
 					iconType = {
@@ -6634,13 +6648,13 @@ guiTypes = {
 
 					iconType = {
 						name = "taxation_banner"
-						position = { x = 240 y = 194 }
+						position = { x = 301 y = 194 }
 						spriteType = "GFX_banner_right_2"
 					}
 
 					instantTextBoxType={
 						name = "title_taxation"
-						position = {x = 288 y = 203 }
+						position = {x = 349 y = 203 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 80
@@ -6651,20 +6665,20 @@ guiTypes = {
 					iconType ={
 						name ="taxation_icon"
 						spriteType = "GFX_macro_buildings_category_strip"
-						position = { x = 262 y = 197}
+						position = { x = 323 y = 197}
 						frame = 6
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_temple"
-						position = { x = 268 y = 226 }
+						position = { x = 329 y = 226 }
 						scripted = yes
 						quadTextureSprite = "GFX_temple"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_cathedral"
-						position = { x = 320 y = 226 }
+						position = { x = 381 y = 226 }
 						scripted = yes
 						quadTextureSprite = "GFX_cathedral"
 					}
@@ -6719,16 +6733,23 @@ guiTypes = {
 						scripted = yes
 						quadTextureSprite = "GFX_fort_18th"
 					}
-					
+
+					guiButtonType = {
+						name = "building_macro_delete_fort_19th"
+						position = { x = 217 y = 323 }
+						scripted = yes
+						quadTextureSprite = "GFX_fort_19th"
+					}
+
 					iconType = {
 						name = "naval_defense_banner"
-						position = { x = 240 y = 291 }
+						position = { x = 301 y = 291 }
 						spriteType = "GFX_banner_right_2"
 					}
 
 					instantTextBoxType={
 						name = "title_naval_defense"
-						position = {x = 284 y = 300 }
+						position = {x = 345 y = 300 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 160
@@ -6739,24 +6760,24 @@ guiTypes = {
 					iconType ={
 						name ="naval_defense_icon"
 						spriteType = "GFX_macro_buildings_category_strip"
-						position = { x = 255 y = 294}
+						position = { x = 316 y = 294}
 						frame = 9
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_coastal_defence"
-						position = { x = 268 y = 322 }
+						position = { x =329 y = 322 }
 						scripted = yes
 						quadTextureSprite = "GFX_coastal_defence"
 					}
 
 					guiButtonType = {
 						name = "building_macro_delete_naval_battery"
-						position = { x = 320 y = 322 }
+						position = { x = 381 y = 322 }
 						scripted = yes
 						quadTextureSprite = "GFX_naval_battery"
 					}
-					
+
 					iconType = {
 						name = "manufactory_banner"
 						position = { x = 4 y = 388 }
@@ -6821,12 +6842,71 @@ guiTypes = {
 						scripted = yes
 						quadTextureSprite = "GFX_furnace"
 					}
+
+					#Roads
+					iconType = {
+						name = "roads_banner"
+						position = { x = 4 y = 485 }
+						spriteType = "GFX_banner_left_4"
+					}
+
+					instantTextBoxType={
+						name = "title_roads"
+						position = {x = 44 y = 494 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 160
+						maxHeight = 18
+						text = "Road System"
+					}
+					
+					iconType ={
+						name ="roads_icon"
+						spriteType = "GFX_macro_buildings_category_strip"
+						position = { x = 15 y = 488}
+						frame = 10
+					}
+
+					guiButtonType = {
+						name = "building_macro_delete_early_road"
+						position = { x = 9 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_early_road"
+					}
+
+					guiButtonType = {
+						name = "building_macro_delete_gravel_road"
+						position = { x = 61 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_gravel_road"
+					}
+
+					guiButtonType = {
+						name = "building_macro_delete_royal_road"
+						position = { x = 113 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_royal_road"
+					}
+
+					guiButtonType = {
+						name = "building_macro_delete_macadam_road"
+						position = { x = 165 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_macadam_road"
+					}
+
+					guiButtonType = {
+						name = "building_macro_delete_rail_road"
+						position = { x = 217 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_rail_road"
+					}
 					guiButtonType = {
 						name ="delete_building_macro_whitelist_button"
 						quadTextureSprite = "button_type_1"
 						buttonFont = "vic_18"
 						buttonText = delete_building_macro_whitelist_button_text
-						position = { x = 117 y = 480 }
+						position = { x = 144 y = 573 }
 						scripted = yes
 						shortcut = "shift+w"
 					}
@@ -6835,10 +6915,11 @@ guiTypes = {
 						quadTextureSprite = "button_type_1"
 						buttonFont = "vic_18"
 						buttonText = delete_building_macro_unwhitelist_button_text
-						position = { x = 117 y = 480 }
+						position = { x = 144 y = 573 }
 						scripted = yes
 						shortcut = "shift+w"
 					}
+					
 				}
 			}
 

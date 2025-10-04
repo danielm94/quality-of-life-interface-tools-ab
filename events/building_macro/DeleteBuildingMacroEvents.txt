@@ -185,6 +185,54 @@ country_event = {
 			has_country_flag = delete_building_macro_manufactory
 		}
 	}
+	desc = {
+		desc = delete_building_macro_events.d_greatmarket
+		trigger = {
+			has_country_flag = delete_building_macro_greatmarket
+		}
+	}
+	desc = {
+		desc = delete_building_macro_events.d_factory
+		trigger = {
+			has_country_flag = delete_building_macro_factory
+		}
+	}
+	desc = {
+		desc = delete_building_macro_events.d_fort_19th
+		trigger = {
+			has_country_flag = delete_building_macro_fort_19th
+		}
+	}
+	desc = {
+		desc = delete_building_macro_events.d_early_road
+		trigger = {
+			has_country_flag = delete_building_macro_early_road
+		}
+	}
+	desc = {
+		desc = delete_building_macro_events.d_gravel_road
+		trigger = {
+			has_country_flag = delete_building_macro_gravel_road
+		}
+	}
+	desc = {
+		desc = delete_building_macro_events.d_royal_road
+		trigger = {
+			has_country_flag = delete_building_macro_royal_road
+		}
+	}
+	desc = {
+		desc = delete_building_macro_events.d_macadam_road
+		trigger = {
+			has_country_flag = delete_building_macro_macadam_road
+		}
+	}
+	desc = {
+		desc = delete_building_macro_events.d_rail_road
+		trigger = {
+			has_country_flag = delete_building_macro_rail_road
+		}
+	}
 	option = {
 		name = delete_building_macro_events.yes_im_sure
 		trigger = {
@@ -567,6 +615,87 @@ country_event = {
 			building = plantations
 		}
 	}
+	#AB
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_greatmarket
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = greatmarket
+		}
+	}
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_factory
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = factory
+		}
+	}
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_fort_19th
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = fort_19th
+		}
+	}
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_early_road
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = early_road
+		}
+	}
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_gravel_road
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = gravel_road
+		}
+	}
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_royal_road
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = royal_road
+		}
+	}
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_macadam_road
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = macadam_road
+		}
+	}
+	option = {
+		name = delete_building_macro_events.yes_im_sure
+		trigger = {
+			has_country_flag = delete_building_macro_rail_road
+		}
+		custom_tooltip = delete_building_macro_cannot_be_undone_tt
+		delete_buildings_macro_delete_building_type = {
+			building = rail_road
+		}
+	}
 	# "Nevermind" Option
 	option = {
 		name = "nevermind"
@@ -603,5 +732,14 @@ country_event = {
 		clr_country_flag = delete_building_macro_state_house
 		clr_country_flag = delete_building_macro_soldier_households
 		clr_country_flag = delete_building_macro_furnace
+		#AB
+		clr_country_flag = delete_building_macro_greatmarket
+		clr_country_flag = delete_building_macro_factory
+		clr_country_flag = delete_building_macro_fort_19th
+		clr_country_flag = delete_building_macro_early_road
+		clr_country_flag = delete_building_macro_gravel_road
+		clr_country_flag = delete_building_macro_royal_road
+		clr_country_flag = delete_building_macro_macadam_road
+		clr_country_flag = delete_building_macro_rail_road
 	}
 }

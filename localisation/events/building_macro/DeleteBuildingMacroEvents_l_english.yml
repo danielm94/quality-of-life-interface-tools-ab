@@ -43,3 +43,13 @@
  delete_building_macro_events.a_delete_farm_estate: "Delete all Farm Estates"
  delete_building_macro_events.a_delete_mills: "Delete all Mills"
  delete_building_macro_events.a_delete_plantations: "Delete all Plantations"
+
+ #AB
+ delete_building_macro_events.d_greatmarket: "This will delete every single Great Market in your country!"
+ delete_building_macro_events.d_factory: "This will delete every single Factory in your country!"
+ delete_building_macro_events.d_fort_19th: "This will delete every single Polygonal Fort in your country!"
+ delete_building_macro_events.d_early_road: "This will delete every single Early Road in your country!"
+ delete_building_macro_events.d_gravel_road: "This will delete every single Gravel Road in your country!"
+ delete_building_macro_events.d_royal_road: "This will delete every single Royal Road in your country!"
+ delete_building_macro_events.d_macadam_road: "This will delete every single Macadam Road in your country!"
+ delete_building_macro_events.d_rail_road: "This will delete every single Rail Road in your country!"

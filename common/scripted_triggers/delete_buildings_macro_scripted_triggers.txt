@@ -42,6 +42,15 @@ has_any_building_selected_for_deletion = {
 			has_country_flag = delete_building_macro_state_house
 			has_country_flag = delete_building_macro_soldier_households
 			has_country_flag = delete_building_macro_furnace
+			#AB
+			has_country_flag = delete_building_macro_greatmarket
+			has_country_flag = delete_building_macro_factory
+			has_country_flag = delete_building_macro_fort_19th
+			has_country_flag = delete_building_macro_early_road
+			has_country_flag = delete_building_macro_gravel_road
+			has_country_flag = delete_building_macro_royal_road
+			has_country_flag = delete_building_macro_macadam_road
+			has_country_flag = delete_building_macro_rail_road
 		}
 	}
 }
