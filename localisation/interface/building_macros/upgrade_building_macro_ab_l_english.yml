@@ -22,7 +22,7 @@
  upgrade_to_rail_road_button_tt: "Upgrade All to §YRail Road§!"
  upgrade_to_greatmarket_effect_tt: "Upgrades all §YMarketplaces§! and §YTrade Depots§! to §YGreat Markets§!, prioritizing provinces with the highest trade value."
  upgrade_to_factory_effect_tt: "Upgrades all §YWorkshops§! and §YCounting Houses§! to §YFactories§!, prioritizing provinces with the highest production."
- upgrade_to_fort_19th_effect_tt: "Upgrades all §YCastles§!, §YBastions§!, §YStar Forts§!, and §YFortresses§! to §YPolygonal Forts§!, prioritizing provinces with the most defensiveness."
+ upgrade_to_fort_19th_effect_tt: "Upgrades all §YCastles§!, §YBastions§!, §YStar Forts§!, and §YFortresses§! to §YPolygonal Forts§!, prioritizing the capital, then provinces with the highest defensiveness."
  upgrade_to_gravel_road_effect_tt: "Upgrades all §YEarly Roads§! to §YGravel Roads§!, prioritizing provinces with the lowest development cost."
  upgrade_to_royal_road_effect_tt: "Upgrades all §YEarly Roads§! and §YGravel Roads§! to §YRoyal Roads§!, prioritizing provinces with the lowest development cost."
  upgrade_to_macadam_road_effect_tt: "Upgrades all §YEarly Roads§!, §YGravel Roads§!, and §YRoyal Roads§! to §YMacadam Roads§!, prioritizing provinces with the lowest development cost."

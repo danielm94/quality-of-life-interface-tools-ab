@@ -766,13 +766,13 @@ upgrade_all_fort_buildings_to_level_4_fort = {
 			}
 		}
 		else = {
-			upgrade_least_defensive_province_to_level_4_fort = yes
+			upgrade_most_defensive_province_to_level_4_fort = yes
 		}
 	}
 }
 
 #SCOPE = COUNTRY
-upgrade_least_defensive_province_to_level_4_fort = {
+upgrade_most_defensive_province_to_level_4_fort = {
 	every_owned_province = {
 		limit = {
 			has_building = fort_15th
@@ -787,31 +787,29 @@ upgrade_least_defensive_province_to_level_4_fort = {
 		if = {
 			limit = {
 				NOT = {
-					has_saved_global_event_target = least_defensive_province
+					has_saved_global_event_target = most_defensive_province
 				}
 			}
-			save_global_event_target_as = least_defensive_province
+			save_global_event_target_as = most_defensive_province
 		}
 		else = {
 			if = {
 				limit = {
-					NOT = {
-						check_variable = {
-							which = def
-							which = event_target:least_defensive_province
-						}
+					check_variable = {
+						which = def
+						which = event_target:most_defensive_province
 					}
 				}
-				save_global_event_target_as = least_defensive_province
+				save_global_event_target_as = most_defensive_province
 			}
 		}
 	}
-	event_target:least_defensive_province = {
+	event_target:most_defensive_province = {
 		add_building_construction = {
 			building = fort_16th
 		}
 	}
-	clear_global_event_target = least_defensive_province
+	clear_global_event_target = most_defensive_province
 }
 
 #SCOPE = COUNTRY
@@ -850,13 +848,13 @@ upgrade_all_fort_buildings_to_level_6_fort = {
 			}
 		}
 		else = {
-			upgrade_least_defensive_province_to_level_6_fort = yes
+			upgrade_most_defensive_province_to_level_6_fort = yes
 		}
 	}
 }
 
 #SCOPE = COUNTRY
-upgrade_least_defensive_province_to_level_6_fort = {
+upgrade_most_defensive_province_to_level_6_fort = {
 	every_owned_province = {
 		limit = {
 			OR = {
@@ -874,31 +872,29 @@ upgrade_least_defensive_province_to_level_6_fort = {
 		if = {
 			limit = {
 				NOT = {
-					has_saved_global_event_target = least_defensive_province
+					has_saved_global_event_target = most_defensive_province
 				}
 			}
-			save_global_event_target_as = least_defensive_province
+			save_global_event_target_as = most_defensive_province
 		}
 		else = {
 			if = {
 				limit = {
-					NOT = {
-						check_variable = {
-							which = def
-							which = event_target:least_defensive_province
-						}
+					check_variable = {
+						which = def
+						which = event_target:most_defensive_province
 					}
 				}
-				save_global_event_target_as = least_defensive_province
+				save_global_event_target_as = most_defensive_province
 			}
 		}
 	}
-	event_target:least_defensive_province = {
+	event_target:most_defensive_province = {
 		add_building_construction = {
 			building = fort_17th
 		}
 	}
-	clear_global_event_target = least_defensive_province
+	clear_global_event_target = most_defensive_province
 }
 
 #SCOPE = COUNTRY
@@ -939,13 +935,13 @@ upgrade_all_fort_buildings_to_level_8_fort = {
 			}
 		}
 		else = {
-			upgrade_least_defensive_province_to_level_8_fort = yes
+			upgrade_most_defensive_province_to_level_8_fort = yes
 		}
 	}
 }
 
 #SCOPE = COUNTRY
-upgrade_least_defensive_province_to_level_8_fort = {
+upgrade_most_defensive_province_to_level_8_fort = {
 	every_owned_province = {
 		limit = {
 			OR = {
@@ -964,31 +960,29 @@ upgrade_least_defensive_province_to_level_8_fort = {
 		if = {
 			limit = {
 				NOT = {
-					has_saved_global_event_target = least_defensive_province
+					has_saved_global_event_target = most_defensive_province
 				}
 			}
-			save_global_event_target_as = least_defensive_province
+			save_global_event_target_as = most_defensive_province
 		}
 		else = {
 			if = {
 				limit = {
-					NOT = {
-						check_variable = {
-							which = def
-							which = event_target:least_defensive_province
-						}
+					check_variable = {
+						which = def
+						which = event_target:most_defensive_province
 					}
 				}
-				save_global_event_target_as = least_defensive_province
+				save_global_event_target_as = most_defensive_province
 			}
 		}
 	}
-	event_target:least_defensive_province = {
+	event_target:most_defensive_province = {
 		add_building_construction = {
 			building = fort_18th
 		}
 	}
-	clear_global_event_target = least_defensive_province
+	clear_global_event_target = most_defensive_province
 }
 
 #SCOPE = COUNTRY
