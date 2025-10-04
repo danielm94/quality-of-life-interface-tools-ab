@@ -203,6 +203,14 @@ calculate_building_upgrade_costs = {
 		calculate_star_fort_upgrade_cost = yes
 		calculate_fortress_upgrade_cost = yes
 		calculate_naval_battery_upgrade_cost = yes
+		#AB
+		calculate_greatmarket_build_cost = yes
+		calculate_factory_build_cost = yes
+		calculate_fort_19th_build_cost = yes
+		calculate_gravel_road_build_cost = yes
+		calculate_royal_road_build_cost = yes
+		calculate_macadam_road_build_cost = yes
+		calculate_rail_road_build_cost = yes
 	}
 }
 
@@ -629,5 +637,14 @@ calculate_building_build_costs = {
 		calculate_soldier_households_build_cost = yes
 		calculate_impressment_offices_build_cost = yes
 		calculate_state_house_build_cost = yes
+		#AB
+		calculate_greatmarket_build_cost = yes
+		calculate_factory_build_cost = yes
+		calculate_fort_19th_build_cost = yes
+		calculate_early_road_build_cost = yes
+		calculate_gravel_road_build_cost = yes
+		calculate_royal_road_build_cost = yes
+		calculate_macadam_road_build_cost = yes
+		calculate_rail_road_build_cost = yes
 	}
 }

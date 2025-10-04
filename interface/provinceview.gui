@@ -4536,7 +4536,7 @@ guiTypes = {
 			windowType = {
 				name = "build_building_macro_window"
 				backGround=""
-				position = { x=7 y=7 }
+				position = { x=5 y=-78 }
 				size = { x=345 y=465 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -4549,7 +4549,7 @@ guiTypes = {
 				iconType =
 				{
 					name ="build_building_macro_window_bg"
-					spriteType = "gfx_select_building_large_bg2"
+					spriteType = "GFX_build_macro_ab_bg"
 					position = { x= 0 y = 0 }
 					Orientation = "UPPER_LEFT"
 				}
@@ -4568,7 +4568,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "window_title"
-					position = { x = 0 y = 5 }
+					position = { x = 25 y = 10 }
 					textureFile = ""
 					font = "vic_29s"
 					borderSize = {x = 4 y = 4}
@@ -4591,7 +4591,7 @@ guiTypes = {
 					iconType = {
 						name = "trade_banner"
 						position = { x = 4 y = 0 }
-						spriteType = "GFX_banner_left_3"
+						spriteType = "GFX_banner_left_4"
 					}
 
 					instantTextBoxType={
@@ -4625,7 +4625,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4643,7 +4643,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4667,7 +4667,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4677,15 +4677,39 @@ guiTypes = {
 						spriteType = "GFX_building_upgrade_icon"
 					}
 
+					guiButtonType = {
+						name = "building_macro_build_greatmarket"
+						position = { x = 165 y = 32 }
+						scripted = yes
+						quadTextureSprite = "GFX_greatmarket"
+					}
+
+					instantTextBoxType={
+						name = "build_building_greatmarket_cost"
+						position = {x = 165 y = 82 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 128
+						maxHeight = 18
+						text = "ERROR"
+						scripted = yes
+					}
+
+					iconType = {
+						name = "stock_exchange_to_greatmarket_arrow"
+						position = { x = 157 y = 41 }
+						spriteType = "GFX_building_upgrade_icon"
+					}
+
 					iconType = {
 						name = "government_banner"
-						position = { x = 188 y = 0 }
+						position = { x = 249 y = 0 }
 						spriteType = "GFX_banner_right_3"
 					}
 
 					instantTextBoxType={
 						name = "title_government"
-						position = {x = 240 y = 9 }
+						position = {x = 301 y = 9 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 120
@@ -4696,67 +4720,67 @@ guiTypes = {
 					iconType ={
 						name ="government_icon"
 						spriteType = "GFX_macro_buildings_category_strip"
-						position = { x = 213 y = 3}
+						position = { x = 274 y = 3}
 						frame = 2
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_town_hall"
-						position = { x = 268 y = 32 }
+						position = { x = 329 y = 32 }
 						scripted = yes
 						quadTextureSprite = "GFX_town_hall"
 					}
 
 					instantTextBoxType={
 						name = "build_building_town_hall_cost"
-						position = {x = 268 y = 82 }
+						position = {x = 329 y = 82 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_courthouse"
-						position = { x = 216 y = 32 }
+						position = { x = 277 y = 32 }
 						scripted = yes
 						quadTextureSprite = "GFX_courthouse"
 					}
 
 					instantTextBoxType={
 						name = "build_building_courthouse_cost"
-						position = {x = 216 y = 82 }
+						position = {x = 277 y = 82 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
 					iconType = {
 						name = "town_hall_to_courthouse_arrow"
-						position = { x = 260 y = 41 }
+						position = { x = 321 y = 41 }
 						spriteType = "GFX_building_upgrade_icon"
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_university"
-						position = { x = 320 y = 32 }
+						position = { x = 381 y = 32 }
 						scripted = yes
 						quadTextureSprite = "GFX_university"
 					}
 
 					instantTextBoxType={
 						name = "build_building_university_cost"
-						position = {x = 320 y = 82 }
+						position = {x = 381 y = 82 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4801,7 +4825,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4819,7 +4843,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4843,7 +4867,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4861,7 +4885,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4873,13 +4897,13 @@ guiTypes = {
 
 					iconType = {
 						name = "production_banner"
-						position = { x = 240 y = 97 }
-						spriteType = "GFX_banner_right_2"
+						position = { x = 249 y = 97 }
+						spriteType = GFX_banner_right_3
 					}
 
 					instantTextBoxType={
 						name = "title_production"
-						position = {x = 288 y = 106 }
+						position = {x = 301 y = 106 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 80
@@ -4890,53 +4914,75 @@ guiTypes = {
 					iconType ={
 						name ="production_icon"
 						spriteType = "GFX_macro_buildings_category_strip"
-						position = { x = 262 y = 100}
+						position = { x = 274 y = 100}
 						frame = 4
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_workshop"
-						position = { x = 268 y = 129 }
+						position = { x = 277 y = 129 }
 						scripted = yes
 						quadTextureSprite = "GFX_workshop"
 					}
 
 					instantTextBoxType={
 						name = "build_building_workshop_cost"
-						position = {x = 268 y = 179 }
+						position = {x = 277 y = 179 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_counting_house"
-						position = { x = 320 y = 129 }
+						position = { x = 329 y = 129 }
 						scripted = yes
 						quadTextureSprite = "GFX_counting_house"
 					}
 
 					instantTextBoxType={
 						name = "build_building_counting_house_cost"
-						position = {x = 320 y = 179 }
+						position = {x = 329 y = 179 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
 					iconType = {
 						name = "workshop_to_counting_house_arrow"
-						position = { x = 312 y = 138 }
+						position = { x = 321 y = 138 }
 						spriteType = "GFX_building_upgrade_icon"
 					}
 
+					guiButtonType = {
+						name = "building_macro_build_factory"
+						position = { x = 381 y = 129 }
+						scripted = yes
+						quadTextureSprite = "GFX_factory"
+					}
 
+					instantTextBoxType={
+						name = "build_building_factory_cost"
+						position = {x = 381 y = 179 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 128
+						maxHeight = 18
+						text = "ERROR"
+						scripted = yes
+					}
+
+					iconType = {
+						name = "counting_house_to_factory_arrow"
+						position = { x = 373 y = 138 }
+						spriteType = "GFX_building_upgrade_icon"
+					}
 
 
 
@@ -4977,7 +5023,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -4995,7 +5041,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5019,7 +5065,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5037,7 +5083,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5049,13 +5095,13 @@ guiTypes = {
 
 					iconType = {
 						name = "taxation_banner"
-						position = { x = 240 y = 194 }
+						position = { x = 301 y = 194 }
 						spriteType = "GFX_banner_right_2"
 					}
 
 					instantTextBoxType={
 						name = "title_taxation"
-						position = {x = 288 y = 203 }
+						position = {x = 349 y = 203 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 80
@@ -5066,49 +5112,49 @@ guiTypes = {
 					iconType ={
 						name ="taxation_icon"
 						spriteType = "GFX_macro_buildings_category_strip"
-						position = { x = 262 y = 197}
+						position = { x = 323 y = 197}
 						frame = 6
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_temple"
-						position = { x = 268 y = 226 }
+						position = { x = 329 y = 226 }
 						scripted = yes
 						quadTextureSprite = "GFX_temple"
 					}
 
 					instantTextBoxType={
 						name = "build_building_temple_cost"
-						position = {x = 268 y = 276 }
+						position = {x = 329 y = 276 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_cathedral"
-						position = { x = 320 y = 226 }
+						position = { x = 381 y = 226 }
 						scripted = yes
 						quadTextureSprite = "GFX_cathedral"
 					}
 
 					instantTextBoxType={
 						name = "build_building_cathedral_cost"
-						position = {x = 320 y = 276 }
+						position = {x = 381 y = 276 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
 					iconType = {
 						name = "temple_to_cathedral_arrow"
-						position = { x = 312 y = 235 }
+						position = { x = 373 y = 235 }
 						spriteType = "GFX_building_upgrade_icon"
 					}
 
@@ -5153,7 +5199,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5171,7 +5217,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5195,7 +5241,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5219,7 +5265,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5229,17 +5275,41 @@ guiTypes = {
 						spriteType = "GFX_building_upgrade_icon"
 					}
 
+					guiButtonType = {
+						name = "building_macro_build_fort_19th"
+						position = { x = 217 y = 323 }
+						scripted = yes
+						quadTextureSprite = "GFX_fort_19th"
+					}
+
+					instantTextBoxType={
+						name = "build_building_fort_19th_cost"
+						position = {x = 217 y = 373 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 128
+						maxHeight = 18
+						text = "ERROR"
+						scripted = yes
+					}
+
+					iconType = {
+						name = "fort_18th_to_fort_19th_arrow"
+						position = { x = 209 y = 332 }
+						spriteType = "GFX_building_upgrade_icon"
+					}
+
 
 					
 					iconType = {
 						name = "naval_defense_banner"
-						position = { x = 240 y = 291 }
+						position = { x = 301 y = 291 }
 						spriteType = "GFX_banner_right_2"
 					}
 
 					instantTextBoxType={
 						name = "title_naval_defense"
-						position = {x = 284 y = 300 }
+						position = {x = 345 y = 300 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 160
@@ -5250,49 +5320,49 @@ guiTypes = {
 					iconType ={
 						name ="naval_defense_icon"
 						spriteType = "GFX_macro_buildings_category_strip"
-						position = { x = 255 y = 294}
+						position = { x = 316 y = 294}
 						frame = 9
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_coastal_defence"
-						position = { x = 268 y = 322 }
+						position = { x =329 y = 322 }
 						scripted = yes
 						quadTextureSprite = "GFX_coastal_defence"
 					}
 
 					instantTextBoxType={
 						name = "build_building_coastal_defence_cost"
-						position = {x = 268 y = 372 }
+						position = {x =329 y = 372 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
 					guiButtonType = {
 						name = "building_macro_build_naval_battery"
-						position = { x = 320 y = 322 }
+						position = { x = 381 y = 322 }
 						scripted = yes
 						quadTextureSprite = "GFX_naval_battery"
 					}
 
 					instantTextBoxType={
 						name = "build_building_naval_battery_cost"
-						position = {x = 320 y = 372 }
+						position = {x = 381 y = 372 }
 						font = "vic_18"
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
 					iconType = {
 						name = "coastal_defence_to_naval_battery_arrow"
-						position = { x = 312 y = 332 }
+						position = { x = 373 y = 332 }
 						spriteType = "GFX_building_upgrade_icon"
 					}
 					
@@ -5336,7 +5406,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5354,7 +5424,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5372,7 +5442,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5390,7 +5460,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5408,7 +5478,7 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
 
@@ -5426,12 +5496,152 @@ guiTypes = {
 						borderSize = {x = 0 y = 0}
 						maxWidth = 128
 						maxHeight = 18
-						text = "§RERROR§!"
+						text = "ERROR"
 						scripted = yes
 					}
+
+					#Roads
+					iconType = {
+						name = "roads_banner"
+						position = { x = 4 y = 485 }
+						spriteType = "GFX_banner_left_4"
+					}
+
+					instantTextBoxType={
+						name = "title_roads"
+						position = {x = 44 y = 494 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 160
+						maxHeight = 18
+						text = "Road System"
+					}
+					
+					iconType ={
+						name ="roads_icon"
+						spriteType = "GFX_macro_buildings_category_strip"
+						position = { x = 15 y = 488}
+						frame = 10
+					}
+
+					guiButtonType = {
+						name = "building_macro_build_early_road"
+						position = { x = 9 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_early_road"
+					}
+
+					instantTextBoxType={
+						name = "build_building_early_road_cost"
+						position = {x = 9 y = 567 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 128
+						maxHeight = 18
+						text = "ERROR"
+						scripted = yes
+					}
+
+					guiButtonType = {
+						name = "building_macro_build_gravel_road"
+						position = { x = 61 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_gravel_road"
+					}
+
+					instantTextBoxType={
+						name = "build_building_gravel_road_cost"
+						position = {x = 61 y = 567 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 128
+						maxHeight = 18
+						text = "ERROR"
+						scripted = yes
+					}
+
+					iconType = {
+						name = "early_road_to_gravel_road_arrow"
+						position = { x = 53 y = 526 }
+						spriteType = "GFX_building_upgrade_icon"
+					}
+
+					guiButtonType = {
+						name = "building_macro_build_royal_road"
+						position = { x = 113 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_royal_road"
+					}
+
+					instantTextBoxType={
+						name = "build_building_royal_road_cost"
+						position = {x = 113 y = 567 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 128
+						maxHeight = 18
+						text = "ERROR"
+						scripted = yes
+					}
+
+					iconType = {
+						name = "gravel_road_to_royal_road_arrow"
+						position = { x = 105 y = 526 }
+						spriteType = "GFX_building_upgrade_icon"
+					}
+
+					guiButtonType = {
+						name = "building_macro_build_macadam_road"
+						position = { x = 165 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_macadam_road"
+					}
+
+					instantTextBoxType={
+						name = "build_building_macadam_road_cost"
+						position = {x = 165 y = 567 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 128
+						maxHeight = 18
+						text = "ERROR"
+						scripted = yes
+					}
+
+					iconType = {
+						name = "royal_road_to_macadam_road_arrow"
+						position = { x = 157 y = 526 }
+						spriteType = "GFX_building_upgrade_icon"
+					}
+
+					guiButtonType = {
+						name = "building_macro_build_rail_road"
+						position = { x = 217 y = 517 }
+						scripted = yes
+						quadTextureSprite = "GFX_rail_road"
+					}
+
+					instantTextBoxType={
+						name = "build_building_rail_road_cost"
+						position = {x = 217 y = 567 }
+						font = "vic_18"
+						borderSize = {x = 0 y = 0}
+						maxWidth = 128
+						maxHeight = 18
+						text = "ERROR"
+						scripted = yes
+					}
+
+					iconType = {
+						name = "macadam_road_to_rail_road_arrow"
+						position = { x = 209 y = 526 }
+						spriteType = "GFX_building_upgrade_icon"
+					}
+
+
 					guiButtonType = {
 						name = "building_macro_settings_button"
-						position = { x = 283 y = 487 }
+						position = { x = 350 y = 570 }
 						quadTextureSprite ="GFX_standard_button_71"
 						tooltip = ""
 						tooltipText =""
@@ -5442,7 +5652,7 @@ guiTypes = {
 					}
 					guiButtonType = {
 						name = "building_macro_cancel_button"
-						position = { x = 15 y = 487 }
+						position = { x = 265 y = 570 }
 						quadTextureSprite ="GFX_standard_button_71"
 						tooltip = ""
 						tooltipText =""
@@ -5456,7 +5666,7 @@ guiTypes = {
 			windowType = {
 				name = "upgrade_building_macro_window"
 				backGround=""
-				position = { x=7 y=7 }
+				position = { x=5 y=-78 }
 				size = { x=345 y=465 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -5469,7 +5679,7 @@ guiTypes = {
 				iconType =
 				{
 					name ="upgrade_building_macro_window_bg"
-					spriteType = "gfx_select_building_large_bg2"
+					spriteType = "GFX_build_macro_ab_bg"
 					position = { x= 0 y = 0 }
 					Orientation = "UPPER_LEFT"
 				}
@@ -5488,7 +5698,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "window_title"
-					position = { x = 0 y = 5 }
+					position = { x = 25 y = 10 }
 					textureFile = ""
 					font = "vic_29s"
 					borderSize = {x = 4 y = 4}
@@ -5612,7 +5822,7 @@ guiTypes = {
 
 					iconType = {
 						name = "production_banner"
-						position = { x = 240 y = 97 }
+						position = { x = 301 y = 97 }
 						spriteType = "GFX_banner_right_2"
 					}
 
@@ -5798,7 +6008,7 @@ guiTypes = {
 			windowType = {
 				name = "delete_building_macro_window"
 				backGround=""
-				position = { x=7 y=7 }
+				position = { x=5 y=-78 }
 				size = { x=345 y=465 }
 				dontRender = ""
 				horizontalBorder= ""
@@ -5811,7 +6021,7 @@ guiTypes = {
 				iconType =
 				{
 					name ="delete_building_macro_window_bg"
-					spriteType = "gfx_select_building_large_bg2"
+					spriteType = "GFX_build_macro_ab_bg"
 					position = { x= 0 y = 0 }
 					Orientation = "UPPER_LEFT"
 				}
@@ -5830,7 +6040,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "window_title"
-					position = { x = 0 y = 5 }
+					position = { x = 25 y = 10 }
 					textureFile = ""
 					font = "vic_29s"
 					borderSize = {x = 4 y = 4}
@@ -6289,21 +6499,21 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "build_building_macro_tab_window_opened"
-				position = { x=388 y=75}
+				position = { x=445 y=-25}
 				quadTextureSprite ="GFX_build_building_macro_tab"
 				scripted = yes
 				shortcut = "shift+b"
 			}
 			guiButtonType = {
 				name = "upgrade_building_macro_tab_window_opened"
-				position = { x=388 y=119}
+				position = { x=445 y=19}
 				quadTextureSprite ="GFX_upgrade_building_macro_tab"
 				scripted = yes
 				shortcut = "shift+u"
 			}
 			guiButtonType = {
 				name = "delete_building_macro_tab_window_opened"
-				position = { x=388 y=163}
+				position = { x=445 y=63}
 				quadTextureSprite ="GFX_delete_building_macro_tab"
 				scripted = yes
 				shortcut = "shift+d"
@@ -6311,7 +6521,7 @@ guiTypes = {
 			guiButtonType = {
 					name = "building_macro_close_button"
 					scripted=yes
-					position = { x = 375 y = 10 }
+					position = { x = 430 y = -77 }
 					quadTextureSprite ="GFX_closebutton2"
 					clicksound = close_window
 					shortcut = "ESCAPE"
