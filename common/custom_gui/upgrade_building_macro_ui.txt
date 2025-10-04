@@ -503,78 +503,114 @@ custom_button = {
 	}
 }
 
+custom_button = {
+	name = upgrade_building_macro_settings_button
+	tooltip = upgrade_building_macro_settings_button_tt
+	potential = {
+	}
+	trigger = {
+		hidden_trigger = {
+			NOT = {
+				FROM = {
+					has_country_flag = in_building_macro_settings
+				}
+			}
+		}
+	}
+	effect = {
+		FROM = {
+			set_country_flag = in_building_macro_settings
+			country_event = {
+				id = upgrade_building_macro_settings_event.1
+			}
+		}
+	}
+}
+
 custom_text_box = {
 	name = upgrade_to_trade_depot_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_stock_exchange_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_town_hall_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_drydock_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_grand_shipyard_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_counting_house_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_training_fields_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_conscription_center_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_cathedral_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_fort_16th_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_fort_17th_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_fort_18th_cost
 	potential = {
 	}
 	tooltip = empty_text
 }
+
 custom_text_box = {
 	name = upgrade_to_naval_battery_cost
 	potential = {

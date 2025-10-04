@@ -55,3 +55,4 @@
  upgrade_to_fort_17th_cost: "[From.star_fort_upgrade_cost.GetValue]¤"
  upgrade_to_fort_18th_cost: "[From.fortress_upgrade_cost.GetValue]¤"
  upgrade_to_naval_battery_cost: "[From.naval_battery_upgrade_cost.GetValue]¤"
+ upgrade_building_macro_settings_button_tt: "Click here to configure how the macro upgrades buildings."

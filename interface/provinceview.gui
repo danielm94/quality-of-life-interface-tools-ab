@@ -6352,6 +6352,18 @@ guiTypes = {
 						scripted = yes
 						shortcut = "CTRL+z"
 					}
+					guiButtonType = {
+						name = "upgrade_building_macro_settings_button"
+						position = { x = 341 y = 570 }
+						quadTextureSprite ="GFX_standard_button_71"
+						tooltip = ""
+						tooltipText =""
+						delayedTooltipText = ""
+						buttonText = "Settings"
+						buttonFont = "vic_18"
+						scripted = yes
+						shortcut = "ctrl+,"
+					}
 				}
 			}
 			windowType = {
