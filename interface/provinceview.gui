@@ -2865,6 +2865,7 @@ guiTypes = {
 				name = "buildings_button"
 				position = { x=478 y=144}
 				quadTextureSprite ="GFX_build_interface_building_tab"
+				shortcut = "b"
 			}
 		}
 
