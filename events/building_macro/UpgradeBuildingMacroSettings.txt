@@ -297,7 +297,7 @@ country_event = {
 	option = {
 		trigger = {
 			hidden_trigger = {
-				has_country_flag = enable_smart_build_upgrade_building_macro
+				has_country_flag = enable_smart_upgrade_building_macro
 			}
 		}
 		highlight = yes
@@ -305,7 +305,7 @@ country_event = {
 		custom_tooltip = smart_upgrade_macro_tt
 		hidden_effect = {
 			toggle_country_flag = {
-				flag = enable_smart_build_upgrade_building_macro
+				flag = enable_smart_upgrade_building_macro
 			}
 			country_event = {
 				id = upgrade_building_macro_settings_duplicate_event.3
@@ -316,7 +316,7 @@ country_event = {
 		trigger = {
 			hidden_trigger = {
 				NOT = {
-					has_country_flag = enable_smart_build_upgrade_building_macro
+					has_country_flag = enable_smart_upgrade_building_macro
 				}
 			}
 		}
@@ -324,7 +324,7 @@ country_event = {
 		custom_tooltip = smart_upgrade_macro_tt
 		hidden_effect = {
 			toggle_country_flag = {
-				flag = enable_smart_build_upgrade_building_macro
+				flag = enable_smart_upgrade_building_macro
 			}
 			country_event = {
 				id = upgrade_building_macro_settings_duplicate_event.3

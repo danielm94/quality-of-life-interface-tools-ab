@@ -19,7 +19,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_greatmarket_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_greatmarket_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_trade_buildings_to_greatmarkets = yes
@@ -49,7 +59,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_factory_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_factory_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_production_buildings_to_factories = yes
@@ -81,7 +101,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_fort_19th_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_fort_19th_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_fort_buildings_to_level_9_fort = yes
@@ -108,7 +138,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_gravel_road_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_gravel_road_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_road_buildings_to_gravel_road = yes
@@ -138,7 +178,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_royal_road_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_royal_road_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_road_buildings_to_royal_road = yes
@@ -169,7 +219,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_macadam_road_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_macadam_road_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_road_buildings_to_macadam_road = yes
@@ -201,7 +261,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_rail_road_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_rail_road_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_road_buildings_to_rail_road = yes

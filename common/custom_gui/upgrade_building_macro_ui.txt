@@ -133,7 +133,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_trade_depot_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_trade_depot_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_trade_buildings_to_trade_depots = yes
@@ -163,7 +173,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_stock_exchange_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_stock_exchange_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_trade_buildings_to_stock_exchanges = yes
@@ -190,7 +210,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_town_hall_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_town_hall_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_government_buildings_to_town_halls = yes
@@ -217,7 +247,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_drydock_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_drydock_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_dock_buildings_to_dry_docks = yes
@@ -244,7 +284,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_grand_shipyard_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_grand_shipyard_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_shipyard_buildings_to_grand_shipyards = yes
@@ -271,7 +321,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_counting_house_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_counting_house_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_workshop_buildings_to_counting_houses = yes
@@ -298,7 +358,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_training_fields_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_training_fields_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_manpower_buildings_to_training_fields = yes
@@ -325,7 +395,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_conscription_center_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_conscription_center_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_force_limit_buildings_to_conscription_center = yes
@@ -352,7 +432,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_cathedral_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_cathedral_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_tax_buildings_to_cathedrals = yes
@@ -379,7 +469,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_fort_16th_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_fort_16th_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_fort_buildings_to_level_4_fort = yes
@@ -409,7 +509,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_fort_17th_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_fort_17th_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_fort_buildings_to_level_6_fort = yes
@@ -440,7 +550,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_fort_18th_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_fort_18th_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_fort_buildings_to_level_8_fort = yes
@@ -467,7 +587,17 @@ custom_button = {
 		}
 	}
 	effect = {
-		custom_tooltip = upgrade_to_naval_battery_effect_tt
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = enable_smart_upgrade_building_macro
+				}
+			}
+			custom_tooltip = upgrade_to_naval_battery_effect_tt
+		}
+		else = {
+			custom_tooltip = upgrade_building_anywhere_possible_tt
+		}
 		hidden_effect = {
 			FROM = {
 				upgrade_all_coastal_defenses_to_naval_battery = yes

@@ -1,8 +1,26 @@
 #SCOPE = COUNTRY
 upgrade_all_trade_buildings_to_greatmarkets = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_greatmarket = yes
 			any_owned_province = {
 				OR = {
@@ -15,7 +33,41 @@ upgrade_all_trade_buildings_to_greatmarkets = {
 				}
 			}
 		}
-		upgrade_highest_trade_value_province_to_greatmarket = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_trade_value_province_to_greatmarket = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = greatmarket
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -66,9 +118,27 @@ upgrade_highest_trade_value_province_to_greatmarket = {
 
 #SCOPE = COUNTRY
 upgrade_all_production_buildings_to_factories = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_factory = yes
 			any_owned_province = {
 				OR = {
@@ -80,7 +150,40 @@ upgrade_all_production_buildings_to_factories = {
 				}
 			}
 		}
-		upgrade_highest_production_province_to_factory = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_highest_production_province_to_factory = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = factory
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -189,9 +292,27 @@ upgrade_highest_production_province_to_factory = {
 
 #SCOPE = COUNTRY
 upgrade_all_fort_buildings_to_level_9_fort = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_fort_19th = yes
 			any_owned_province = {
 				OR = {
@@ -205,10 +326,38 @@ upgrade_all_fort_buildings_to_level_9_fort = {
 				}
 			}
 		}
-		#Always prioritize capital
 		if = {
 			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			#Always prioritize capital
+			if = {
+				limit = {
+					capital_scope = {
+						OR = {
+							has_building = fort_15th
+							has_building = fort_16th
+							has_building = fort_17th
+							has_building = fort_18th
+						}
+						NOT = {
+							has_construction = any
+						}
+					}
+				}
 				capital_scope = {
+					add_building_construction = {
+						building = fort_19th
+					}
+				}
+			}
+			else = {
+				upgrade_most_defensive_province_to_level_9_fort = yes
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
 					OR = {
 						has_building = fort_15th
 						has_building = fort_16th
@@ -219,15 +368,22 @@ upgrade_all_fort_buildings_to_level_9_fort = {
 						has_construction = any
 					}
 				}
-			}
-			capital_scope = {
 				add_building_construction = {
 					building = fort_19th
 				}
 			}
 		}
-		else = {
-			upgrade_most_defensive_province_to_level_9_fort = yes
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
 		}
 	}
 }
@@ -280,9 +436,27 @@ upgrade_most_defensive_province_to_level_9_fort = {
 
 #SCOPE = COUNTRY
 upgrade_all_road_buildings_to_gravel_road = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_gravel_road = yes
 			any_owned_province = {
 				has_building = early_road
@@ -291,7 +465,37 @@ upgrade_all_road_buildings_to_gravel_road = {
 				}
 			}
 		}
-		upgrade_lowest_development_cost_province_to_gravel_road = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_lowest_development_cost_province_to_gravel_road = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_building = early_road
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = gravel_road
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -348,9 +552,27 @@ upgrade_lowest_development_cost_province_to_gravel_road = {
 
 #SCOPE = COUNTRY
 upgrade_all_road_buildings_to_royal_road = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_royal_road = yes
 			any_owned_province = {
 				OR = {
@@ -362,7 +584,40 @@ upgrade_all_road_buildings_to_royal_road = {
 				}
 			}
 		}
-		upgrade_lowest_development_cost_province_to_royal_road = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_lowest_development_cost_province_to_royal_road = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = early_road
+						has_building = gravel_road
+					}
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = royal_road
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -422,9 +677,27 @@ upgrade_lowest_development_cost_province_to_royal_road = {
 
 #SCOPE = COUNTRY
 upgrade_all_road_buildings_to_macadam_road = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_macadam_road = yes
 			any_owned_province = {
 				OR = {
@@ -437,7 +710,41 @@ upgrade_all_road_buildings_to_macadam_road = {
 				}
 			}
 		}
-		upgrade_lowest_development_cost_province_to_macadam_road = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_lowest_development_cost_province_to_macadam_road = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = early_road
+						has_building = gravel_road
+						has_building = royal_road
+					}
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = macadam_road
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
@@ -498,9 +805,27 @@ upgrade_lowest_development_cost_province_to_macadam_road = {
 
 #SCOPE = COUNTRY
 upgrade_all_road_buildings_to_rail_road = {
+	hidden_effect = {
+		set_variable = {
+			which = iteration_counter
+			which = upgrade_building_quantity
+		}
+	}
 	calculate_building_upgrade_costs = yes
 	while = {
 		limit = {
+			if = {
+				limit = {
+					check_variable = {
+						which = upgrade_building_quantity
+						value = 0
+					}
+				}
+				check_variable = {
+					which = iteration_counter
+					value = 1
+				}
+			}
 			can_afford_to_upgrade_rail_road = yes
 			any_owned_province = {
 				OR = {
@@ -514,7 +839,42 @@ upgrade_all_road_buildings_to_rail_road = {
 				}
 			}
 		}
-		upgrade_lowest_development_cost_province_to_rail_road = yes
+		if = {
+			limit = {
+				has_country_flag = enable_smart_upgrade_building_macro
+			}
+			upgrade_lowest_development_cost_province_to_rail_road = yes
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_building = early_road
+						has_building = gravel_road
+						has_building = royal_road
+						has_building = rail_road
+					}
+					NOT = {
+						has_construction = any
+					}
+				}
+				add_building_construction = {
+					building = trade_depot
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = upgrade_building_quantity
+					value = 0
+				}
+			}
+			subtract_variable = {
+				which = iteration_counter
+				value = 1
+			}
+		}
 	}
 }
 
