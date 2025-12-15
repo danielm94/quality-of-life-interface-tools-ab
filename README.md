@@ -1,3 +1,5 @@
+If you like what I do please consider supporting me on [Ko-fi](https://ko-fi.com/danielm94).
+
 # Compatibility Patch for Ante Bellum
 
 **DO NOT USE THIS MOD AND "Quality of Life Interface Tools" AT THE SAME TIME.**
